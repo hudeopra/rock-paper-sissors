@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.ph-game {
+  background-color: #009e8b;
+}
+
+.ph-game__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.ph-game__content--text {
+  margin-bottom: 30px;
+}
+
+.ph-game__content--text h1 {
+  font-size: 50px;
+}
+
+.ph-game__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.ph-game button {
+  margin-top: auto;
+  margin: 0;
+  background-color: #208376;
+  border: 2px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color: #fff;
+  -webkit-transform: all .5s;
+          transform: all .5s;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+.ph-game button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.ph-hide {
+  display: none;
+}
+
+.btn-down {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+#ph-game__player {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */
