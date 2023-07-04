@@ -18,7 +18,7 @@
                     <div class="ph-game__content--text">
                         <h1 id="status-head">Choose!!!</h1>
                     </div>
-                    <div class="ph-game__option">
+                    <div class="ph-game__option" id="ph-moves">
                         <div class="ph-game__option--item">
                             <button id="button-rock" type="button">Rock</button>
                         </div>
@@ -28,9 +28,12 @@
                         <div class="ph-game__option--item">
                             <button id="button-scissors" type="button">Scissors</button>
                         </div>
-                        <div class="ph-game__option--item ph-hide">
-                            <button id="reset" type="button">Play Again</button>
-                        </div>
+                    </div>
+                    
+                    <div id="ph-reset" class="ph-game__option--item ph-hide">
+                        <button id="reset" type="button" onClick="window.location.reload()">
+                        Play Again
+                        </button>
                     </div>
                     <div id="ph-game__player">
                         <p></p>

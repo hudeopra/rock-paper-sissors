@@ -16,7 +16,10 @@ const buttonPressed = e => {
     playerChoice = selectedButton.innerHTML;
     pChoice.innerHTML = `Player Choice: ${selectedButton.innerHTML}`;
     console.log("player", playerChoice);
+
     startGame(playerChoice);
+    document.getElementById(`ph-moves`).setAttribute(`class`, `ph-hide`)
+    document.getElementById(`ph-reset`).setAttribute(`class`, ``)
 };
 
 
@@ -24,15 +27,12 @@ for (var button of buttons) {
     button.addEventListener("click", buttonPressed);
 }
 
-// function randomMove() {
-//     console.log(Math.floor(Math.random() * 3))
-//     return Math.floor(Math.random() * 3);
-// }
+
 
 function randomMove() {
     var moveIndex = Math.floor(Math.random() * 3);
     // var compChoice = moveList[moveIndex];
-    // console.log("comp", compChoice);
+    document.getElementById("ph-game__comp").innerHTML = `Computer Choice: ${moveList[moveIndex]}`
 
     return moveIndex;
 }
@@ -60,7 +60,7 @@ function startGame() {
 
 
     console.log(resultMsg);
-
+    document.getElementById("status-head").innerHTML = resultMsg
 }
 
 

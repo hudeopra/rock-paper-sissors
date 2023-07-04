@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.ph-game {
+    background-color: rgb(0, 158, 139);
+
+    &__wrapper {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    &__content {
+        &--text {
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    &__option {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &--item {}
+    }
+
+    button,
+    #reset {
+        margin-top: auto;
+        margin: 0;
+        background-color: #208376;
+        border: 2px solid rgba(255, 255, 255, 0);
+        cursor: pointer;
+        color: #fff;
+        transform: all .5s;
+        padding: 12px 15px;
+        margin: 0 15px;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
+
+.ph-hide {
+    display: none;
+}
+
+.btn-down {
+    transform: translateY(-2px);
+}
+
+#ph-game__player,
+#ph-game__comp {
+    margin: 20px;
+}
